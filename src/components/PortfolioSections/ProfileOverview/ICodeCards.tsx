@@ -8,27 +8,33 @@ const ICodeCards = () => {
   const cardsData = [
     {
       title: 'I Learn',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      description:
+        'As a developer, continuous learning is essential. I stay updated with the latest technologies, tools, and practices to improve my skills and stay ahead in the fast-evolving tech world.',
     },
     {
       title: 'I Think',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      description:
+        'I believe in thoughtful problem-solving. Before diving into code, I take time to fully understand the problem, considering all angles to devise efficient, scalable solutions.',
     },
     {
       title: 'I Understand',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      description:
+        'Understanding the underlying principles of technology, architecture, and the needs of users is key. I prioritize a deep comprehension of both business requirements and technical details to build impactful applications.',
     },
     {
       title: 'I Design',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      description:
+        'Good design isn’t just about aesthetics, it’s about usability and functionality. I focus on designing intuitive, user-centric interfaces and system architectures that enhance user experience and maintain code scalability.',
     },
     {
       title: 'I Create',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      description:
+        'Bringing ideas to life is my passion. From concept to completion, I create software solutions that are not only functional but also efficient, reliable, and elegant in implementation.',
     },
     {
       title: 'I Code',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      description:
+        'Coding is at the core of what I do. I write clean, maintainable code, using best practices to ensure my projects are performant, secure, and scalable for future growth.',
     },
   ];
 
