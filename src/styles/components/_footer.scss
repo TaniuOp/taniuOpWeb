@@ -1,20 +1,15 @@
 footer {
   width: 100%;
-  background-color: black;
+  background-color: #8cadae4d;
   color: white;
   text-align: center;
-  padding-top: 6px;
-}
-
-section.footer {
   display: flex;
-  font-weight: bold;
-  align-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
 }
 
-section.footerContent {
-  margin-bottom: 5px;
+.footer-text {
+  margin: 4px;
 }

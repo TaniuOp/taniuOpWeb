@@ -35,6 +35,10 @@
 }
 
 .carouselCard {
-  flex: 0 0 auto; /* Ensures cards don't shrink */
+  flex: 0 0 auto;
   width: 300px;
+}
+
+.cards_texts {
+  font-size: 0.8rem;
 }
