@@ -3,135 +3,71 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardHeader } from '@mui/material';
+import imageOne from '../../../assets/origami_animals.png';
+import imageTwo from '../../../assets/origami_animals_code.png';
+import imageThree from '../../../assets/wild_animals.jpg';
 
 const ICodeCards = () => {
   const cardsData = [
     {
-      title: 'I code',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-    },
-    {
       title: 'I Learn',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      imageSrc: imageOne,
+      description:
+        'As a developer, continuous learning is essential. I stay updated with the latest technologies, tools, and practices to improve my skills and stay ahead in the fast-evolving tech world.',
     },
     {
       title: 'I Think',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      imageSrc: imageTwo,
+      description:
+        'I believe in thoughtful problem-solving. Before diving into code, I take time to fully understand the problem, considering all angles to devise efficient, scalable solutions.',
     },
     {
-      title: 'I Create',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-    },
-    {
-      title: 'I Dream',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-    },
-    {
-      title: 'I Love',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-    },
-    {
-      title: 'I Analize',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-    },
-    {
-      title: 'I Listen',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      title: 'I Understand',
+      imageSrc: imageThree,
+      description:
+        'Understanding the underlying principles of technology, architecture, and the needs of users is key. I prioritize a deep comprehension of both business requirements and technical details to build impactful applications.',
     },
     {
       title: 'I Design',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+      imageSrc: imageOne,
+      description:
+        'Good design isn’t just about aesthetics, it’s about usability and functionality. I focus on designing intuitive, user-centric interfaces and system architectures that enhance user experience and maintain code scalability.',
+    },
+    {
+      title: 'I Create',
+      imageSrc: imageTwo,
+      description:
+        'Bringing ideas to life is my passion. From concept to completion, I create software solutions that are not only functional but also efficient, reliable, and elegant in implementation.',
+    },
+    {
+      title: 'I Code',
+      imageSrc: imageThree,
+      description:
+        'Coding is at the core of what I do. I write clean, maintainable code, using best practices to ensure my projects are performant, secure, and scalable for future growth.',
     },
   ];
 
   return (
-    <>
-      <div className='iCodeContainer'>
-        <Card className='card' sx={{ maxWidth: 95 }}>
+    <div className='carouselContainer'>
+      {cardsData.map((card, index) => (
+        <Card className='carouselCard' sx={{ maxWidth: 300 }} key={index}>
           <CardActionArea>
-            <CardHeader
-              className={''}
-              classes={''}
-              title={cardsData[0].title}
-            />
+            <CardHeader title={card.title} />
             <CardMedia
               component='img'
               height='140'
-              image='https://pbs.twimg.com/profile_images/1471137201287307273/pYRu-pbf_400x400.jpg'
-              alt='green iguana'
+              image={card.imageSrc}
+              alt={card.title}
             />
-            <CardContent className='content'>
-              <Typography gutterBottom variant='h6' component='div'>
-                {cardsData[0].description}
+            <CardContent>
+              <Typography gutterBottom className='cards_texts'>
+                {card.description}
               </Typography>
             </CardContent>
           </CardActionArea>
         </Card>
-
-        <Card className='card' sx={{ maxWidth: 95 }}>
-          <CardActionArea>
-            <CardHeader
-              className={''}
-              classes={''}
-              title={cardsData[1].title}
-            />
-            <CardMedia
-              component='img'
-              height='140'
-              image='https://pbs.twimg.com/profile_images/1471137201287307273/pYRu-pbf_400x400.jpg'
-              alt='green iguana'
-            />
-            <CardContent className='content'>
-              <Typography gutterBottom variant='h6' component='div'>
-                {cardsData[1].description}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-
-        <Card className='card' sx={{ maxWidth: 95 }}>
-          <CardActionArea>
-            <CardHeader
-              className={''}
-              classes={''}
-              title={cardsData[2].title}
-            />
-            <CardMedia
-              component='img'
-              height='140'
-              image='https://pbs.twimg.com/profile_images/1471137201287307273/pYRu-pbf_400x400.jpg'
-              alt='green iguana'
-            />
-            <CardContent className='content'>
-              <Typography gutterBottom variant='h6' component='div'>
-                {cardsData[2].description}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-
-        <Card className='card' sx={{ maxWidth: 95 }}>
-          <CardActionArea>
-            <CardHeader
-              className={''}
-              classes={''}
-              title={cardsData[3].title}
-            />
-            <CardMedia
-              component='img'
-              height='140'
-              image='https://pbs.twimg.com/profile_images/1471137201287307273/pYRu-pbf_400x400.jpg'
-              alt='green iguana'
-            />
-            <CardContent className='content'>
-              <Typography gutterBottom variant='h6' component='div'>
-                {cardsData[3].description}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </div>
-    </>
+      ))}
+    </div>
   );
 };
 

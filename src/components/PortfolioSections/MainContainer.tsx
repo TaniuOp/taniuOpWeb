@@ -1,9 +1,8 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ProfileOverview from '../PortfolioSections/ProfileOverview/ProfileOverview';
-import About from './About';
 import ContactForm from './ContactForm';
 import Skills from './Skills';
+import About from './About';
 
 const MainContainer = () => {
   return (
