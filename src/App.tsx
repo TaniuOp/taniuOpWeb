@@ -1,29 +1,25 @@
-import MainContainer from './components/PortfolioSections/MainContainer';
+// import MainContainer from './components/PortfolioSections/MainContainer';
 import Footer from './components/PortfolioSections/Footer';
 import { BrowserRouter } from 'react-router-dom';
-import origamiBackground from './assets/wild_animals.jpg';
 import './styles/styles.scss';
+import backgroundImg from './assets/abstract_compose.png';
+import Landing from './components/Wip/Landing';
 
 function App() {
   return (
     <>
-      <div
-        className='App'
-        style={{
-          backgroundImage: `url(${origamiBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          minHeight: '100vh',
-        }}
-      >
+      <div className='App'>
+        <img
+          src={backgroundImg}
+          alt='taniu_background'
+          className='img-abstract'
+        />
         <BrowserRouter>
-          <MainContainer />
+          {/* <MainContainer /> */}
+          <Landing />
         </BrowserRouter>
       </div>
-      <div className='Footer'>
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
