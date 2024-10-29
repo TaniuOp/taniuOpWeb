@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import ICodeCards from './ICodeCards';
 
 const ProfileOverview = () => {
