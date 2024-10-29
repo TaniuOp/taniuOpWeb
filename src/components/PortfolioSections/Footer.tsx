@@ -1,9 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <section className='footer'>
-        <p>Made with love by TaniuOp</p>
-      </section>
+      <p className='footer-text'>Work in progress</p>
     </footer>
   );
 };
