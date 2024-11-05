@@ -1,10 +1,13 @@
 {
+  "homepage":"http://TaniuOp.github.io/taniuOpWeb",
   "name": "taniuop",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
